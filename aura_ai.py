@@ -136,7 +136,7 @@ def display_home():
     
 # Função para iniciar a consulta
 def initiate_consultation():
-    st.image("https://i.postimg.cc/W1nZGh03/banner-client.png", use_column_width=True)
+    st.image("https://i.postimg.cc/8cbR5BPh/banner-2.png", use_column_width=True)
     st.subheader("Seja bem-vinda(o)!")
     
     # Se o CPF já foi inserido, vá diretamente para a consulta
