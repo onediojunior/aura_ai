@@ -143,7 +143,7 @@ def initiate_consultation():
     cpf_input = st.session_state.get('cpf_input', '')
     if not cpf_input:
         # Ler o dataset
-        df = pd.read_csv("datas/users.csv")
+        df = pd.read_csv("users.csv")
         # cliente informa cpf
         cpf_input = st.text_input("CPF (Digite apenas os números)", value="", max_chars=11)
         if st.button('Iniciar consulta'):
