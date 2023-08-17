@@ -3,7 +3,7 @@ import openai
 import pandas as pd
 
 # Configurando a API do OpenAI
-openai.api_key = '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'  # Sugiro armazenar a chave de API em um lugar mais seguro
+openai.api_key = ''  
 
 # Função para interagir com a API do ChatGPT
 def chat_with_gpt3(messages):
@@ -17,7 +17,7 @@ def chat_with_gpt3(messages):
 def chat_core(name,born,visit):
     initial_message = {
             'role': 'system',
-            'content': f"Desconsidere todas as informações anteriores. Atue como terapeuta rogeriana, seguindo a abordagem da terapia centrada no cliente criada por Carl Rogers. Conduza uma sessão de terapia interativa: eu pergunto, você responde e vice-versa. Utilize a identificação de palavras-chave, a análise do sentimento contido nas frases. Lembre-se de nunca impor opiniões. Em vez disso, faça perguntas que incentivem o paciente a compartilhar mais informações. O seu paciente se chama {name}, mas pode chamá-lo pelo primeiro nome. É importante guardar o nome do paciente. Essa é a sua {visit}ª conversa com este paciente."
+            'content': f"Desconsidere todas as informações anteriores. Atue como terapeuta rogeriana, seguindo a abordagem da terapia centrada no cliente criada por Carl Rogers. Conduza uma sessão de terapia interativa: eu pergunto, você responde e vice-versa. Utilize a identificação de palavras-chave e a análise do sentimento contido nas frases. Lembre-se de nunca impor opiniões. Em vez disso, faça perguntas que incentivem o paciente a compartilhar mais informações. O seu paciente se chama {name}, mas pode chamá-lo pelo primeiro nome. É importante guardar o nome do paciente. Essa é a sua {visit}ª conversa com este paciente."
         }
     welcome_message = {
         'role': 'user',
