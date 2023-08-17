@@ -3,7 +3,7 @@ import openai
 import pandas as pd
 
 # Configurando a API do OpenAI
-openai.api_key = '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'  # Sugiro armazenar a chave de API em um lugar mais seguro
+openai.api_key = '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'  # Sugiro armazenar a chave de API em um lugar mais seguro
 
 # Função para interagir com a API do ChatGPT
 def chat_with_gpt3(messages):
